@@ -409,9 +409,29 @@ class Head{
       ],
     },
     'Transport':{
-      'Bus':[],
-      'Auto':[],
-      'Cab' : [],
+      'Bharathi Travels':[
+        Image.asset("images/Bharathi-Travels.jpg"),
+        "Site - www.bharathitravels.com",
+        "+918147523472",
+        "13.3373550984309, 74.74661745490367"
+      ],
+      'Manipal Taxi':[
+        Image.asset("images/Manipal-Taxi.jpg"),
+        "Safe, secure and reliable taxi service for you to and from the airport journeys. ",
+        "+919845214196",
+        "13.35256048865095, 74.78738713482028"
+      ],
+      'Pearl Travels' : [
+        Image.asset("images/Pearl-Travels.jpg"),
+        "Taxi service to help you in your road journeys with friends. Or just to the airport, your choice!",
+        "+918095484222",
+        "13.35464689726176, 74.78820093175388"
+      ],
+    },
+    'Auto':{
+      'Eshwar Nagar':[],
+      'Mandavi':[],
+
     },
   };
 }
