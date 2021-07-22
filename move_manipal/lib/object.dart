@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 class Head{
-  var places = <String,Map<String,List>>{
+  var places = [
+    {
+      'Inside Manipal' : Image.asset('images/Inside.jpg'),
+      'Vicinity' : Image.asset('images/Vicinity.jpg')
+    },
+    {
     'Inside Manipal' : {
       'Sri Krishna Temple': [
         Image.asset("images/Sri-Krishna-Temple.jpg"),
@@ -119,8 +124,14 @@ class Head{
         "14.267990970726682, 74.8081413581272"
       ],
     }
-  };
-  var food = <String,Map<String,List>>{
+  }];
+  var food = [
+    {
+      'Family Restraunts': Image.asset('images/Family.jpg'),
+      'Indulgence' : Image.asset('images/Indulgence.jpg'),
+      'Desserts' : Image.asset('images/Desserts.jpg')
+    },
+    {
     'Family Restraunts':{
       'Saiba' : [
         Image.asset("images/Saiba.jpg"),
@@ -295,8 +306,14 @@ class Head{
         "13.348619060167806, 74.77680423686202"
       ],
     }
-  };
-  var essentials = <String,Map<String,List>>{
+  }];
+  var essentials = [
+    {
+      'Grocery Stores': Image.asset('images/Grocery.jpg'),
+      'Clothing Stores': Image.asset('images/Clothing.jpg'),
+      'Medical Stores': Image.asset('images/Medical.jpg'),
+    },
+    {
     'Grocery Stores':{
       'Student Plaza':[
         Image.asset("images/Student-Plaza.jpg"),
@@ -369,19 +386,14 @@ class Head{
         "13.361722197349906, 74.78419782521726"
       ],
     },
-    // 'Hotels&Inns':{
-    //   'Country Inn':[],
-    //   'Green Park Hotel':[],
-    //   'Hotel Tranquil':[],
-    //   'Hotel Madhuvan Sarai':[],
-    //   'HomeTown Galleria':[],
-    //   'Fortune Inn Valley View':[],
-    //   'Hotel Central Park':[],
-    //   'The Ocean Pearl':[],
-    //   'Oyo':[],
-    // },
-  };
-  var vehicle = <String,Map<String,List>>{
+  }];
+  var vehicle = [
+    {
+      'Rentals': Image.asset('images/Rentals.jpg'),
+      'Transport': Image.asset('images/Transport.jpg'),
+      'Auto' : Image.asset('images/Auto.jpg'),
+    },
+    {
     'Rentals': {
       'Zoomcar':[
         Image.asset("images/Zoomcar.jpg"),
@@ -433,5 +445,5 @@ class Head{
       'Mandavi':[],
 
     },
-  };
+  }];
 }
