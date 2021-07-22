@@ -14,14 +14,26 @@ Card({this.img,this.title,this.desc});
         ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           Text(
             title,
             style: TextStyle(
-              fontSize: 30.0,
-              color: Colors.white
+              fontSize: 25.0,
+              color: Colors.white,
             ),
+
           ),
+          SizedBox(
+            height: 10,,
+          ),
+          Text(
+            desc,
+            style: TextStyle(
+              color: Colors.white70,
+              fontSize: 15.0,
+            ),
+          )
         ],
       ),
     );

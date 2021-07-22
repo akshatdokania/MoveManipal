@@ -18,14 +18,29 @@ class _PlacesState extends State<Places> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             IconButton(onPressed: (){},
-                icon: Icon(Icons.local_pizza),
+                icon: Icon(
+                    Icons.local_pizza,
+                    color: Colors.red,
+                ),
             ),
             IconButton(onPressed: (){},
-                icon: Icon(Icons.place)),
+                icon: Icon(
+                    Icons.place,
+                    color: Colors.red,
+                ),
+            ),
             IconButton(onPressed: (){},
-                icon: Icon(Icons.car_rental)),
+                icon: Icon(
+                    Icons.car_rental,
+                    color: Colors.red,
+                ),
+            ),
             IconButton(onPressed: (){},
-                icon: Icon(Icons.medical_services)),
+                icon: Icon(
+                    Icons.medical_services,
+                  color: Colors.red,
+                ),
+            ),
 
           ],
         ),
@@ -70,14 +85,16 @@ class _PlacesState extends State<Places> {
                     )
                   ],
                 ),
-                // ListView.builder(
-                //     itemCount: obj.places.length,
-                //     itemBuilder: (context,index){
-                //           obj.places.forEach((dest, destdetails) {
-                //
-                //           })
-                //     }),
-                
+                ListView.builder(
+                    itemCount: obj.places.length,
+                    itemBuilder: (context,index){
+                          obj.places.forEach((dest, destdetails) {
+
+                          })
+                    }),
+                ListView.builder(
+                  itemCount: ,
+                    itemBuilder: itemBuilder)
               ],
           )),
     );

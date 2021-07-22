@@ -12,7 +12,6 @@ mainCard({this.bgimage});
         image: DecorationImage(
           image: bgimage,
           fit: BoxFit.cover,
-
         ),
       ),
 
