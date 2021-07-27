@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 class mainCard extends StatelessWidget {
-final ImageProvider bgimage;
-mainCard({this.bgimage});
+final String bgimage;
+final int selected;
+mainCard({this.bgimage,this.selected});
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 10.0),
-      width: double.infinity,
-      height: 80,
+      padding: EdgeInsets.all(20.0),
+      width: 350,
+
       decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
         image: DecorationImage(
-          image: bgimage,
+          image: AssetImage("$bgimage"),
           fit: BoxFit.cover,
         ),
       ),

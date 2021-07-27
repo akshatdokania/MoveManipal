@@ -1,41 +1,46 @@
 import 'package:flutter/material.dart';
-class Card extends StatelessWidget {
-final ImageProvider img;
+class LowerCard extends StatelessWidget {
+final String img;
 final String title;
-final String desc;
-Card({this.img,this.title,this.desc});
+
+LowerCard({this.title,this.img});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: img,
+    return Column(
+      children: [
+        Container(
+          padding: EdgeInsets.only(right: 10.0,left: 10.0),
+          width: 150,
+          height: 150,
+          decoration: BoxDecoration(
+            color: Colors.white10,
+            borderRadius: BorderRadius.circular(10.0),
+            image: DecorationImage(
+              image: AssetImage("$img"),
+              fit: BoxFit.cover,
+            ),
+          ),
         ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 25.0,
-              color: Colors.white,
-            ),
+        Container(
+          padding: EdgeInsets.only(top: 5.0),
+          width: 150,
+          decoration: BoxDecoration(
 
+            borderRadius: BorderRadius.circular(10.0)
           ),
-          SizedBox(
-            height: 10,,
-          ),
-          Text(
-            desc,
-            style: TextStyle(
-              color: Colors.white70,
-              fontSize: 15.0,
+
+          child: Center(
+            child: Text(
+              title,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 10.0,
+              ),
             ),
-          )
-        ],
-      ),
+          ),
+        ),
+      ],
     );
   }
 }
