@@ -127,9 +127,9 @@ class Head{
     }];
   var food = [
     {
-      'Family Restraunts': 'images/Family.jpg',
-      'Indulgence' : 'images/Indulgence.jpg',
-      'Desserts' : 'images/Desserts.jpg',
+      'Family Restraunts': "images/FamilyRestraunts.jpeg",
+      'Indulgence' : "images/Indulgence.jpeg",
+      'Desserts' : "images/Desserts.jpeg",
     },
     {
       'Family Restraunts':{
@@ -194,7 +194,7 @@ class Head{
           "13.36127079024239, 74.78309999671669"
         ],
         'MIT Cafeteria':[
-          "immages/Mit-Cafeteria.jpg",
+          "images/Mit-Cafeteria.jpg",
           "This one is close to all MITians hearts and the place to be to grab a quick bite or lunch between classes. All their dishes are amazing! This place is a must visit for all in manipal for the first or the nth time!",
           "",
           "13.352224105976056, 74.7931154237046"
@@ -208,7 +208,7 @@ class Head{
           "13.349143520510015, 74.78203581205781"
         ],
         "Domino's":[
-          Image.asset("images/Domino's.jpg"),
+          "images/Domino's.jpg",
           "Dil, Dosti, Domino's!",
           "08202574352",
           "13.353647728309852, 74.78997509725323"
@@ -309,9 +309,9 @@ class Head{
     }];
   var essentials = [
     {
-      'Grocery Stores': 'images/Grocery.jpg',
-      'Clothing Stores': 'images/Clothing.jpg',
-      'Medical Stores': 'images/Medical.jpg',
+      'Grocery Stores': "images/Grocery.jpeg",
+      'Clothing Stores': "images/Clothing.jpeg",
+      'Medical Stores': "images/Medical.jpeg",
     },
     {
       'Grocery Stores':{
@@ -389,9 +389,9 @@ class Head{
     }];
   var vehicle = [
     {
-      'Rentals': 'images/Rentals.jpg',
-      'Transport': 'images/Transport.jpg',
-      'Auto' : 'images/Auto.jpg',
+      'Rentals': 'images/Rentals.jpeg',
+      'Transport': 'images/Transport.jpeg',
+      'Auto' : 'images/Auto.jpeg',
     },
     {
       'Rentals': {

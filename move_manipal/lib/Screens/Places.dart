@@ -3,21 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:move_manipal/object.dart';
 import 'package:move_manipal/Components/MainCard.dart';
 import 'package:move_manipal/Components/ListItems.dart';
-import 'package:move_manipal/Components/HeaderPlaces.dart';
+import 'package:move_manipal/Components/Header.dart';
+import 'package:move_manipal/Components/bottomAppBar.dart';
 
-class HomeScreen extends StatefulWidget {
+
+class Places extends StatefulWidget {
+  static const String id ='Places';
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _PlacesState createState() => _PlacesState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  var obj = new Head();
-  var broadItem = obj.places;
-  set
+class _PlacesState extends State<Places> {
+
   @override
   Widget build(BuildContext context) {
 
-
+    var obj = new Head();
+    var broadItem = obj.places;
     var upRowMap = broadItem[0];
     var downRow = Map<String,dynamic>.from(broadItem[1]);
     String selected;
@@ -29,65 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
     var lowerShow = downRow['$selected'];
     var placeList = lowerShow.keys.toList();
     return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.black87,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            IconButton(onPressed: (){
-              broadItem = obj.food;
-            },
-              icon: Icon(
-                Icons.local_pizza,
-                color: Colors.red,
-              ),
-            ),
-            IconButton(onPressed: (){
-              broadItem = obj.places;
-            },
-              icon: Icon(
-                Icons.place,
-                color: Colors.red,
-              ),
-            ),
-            IconButton(onPressed: (){
-              broadItem = obj.vehicle;
-            },
-              icon: Icon(
-                Icons.car_rental,
-                color: Colors.red,
-              ),
-            ),
-            IconButton(onPressed: (){
-              broadItem = obj.essentials;
-            },
-              icon: Icon(
-                Icons.medical_services,
-                color: Colors.red,
-              ),
-            ),
-
-          ],
-        ),
-      ),
+      bottomNavigationBar: bottomBar(),
       body: SafeArea(
           child: Column(
             children: <Widget>[
               Padding(padding: EdgeInsets.only(top: 10,)),
-              Row(
-                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Padding(padding: EdgeInsets.only(left: 15.0,bottom: 10.0)),
-                  Text('DESTINATIONS',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold
-                    ),
-                  ),
-                 Spacer(),
-                 HeaderPlaces(),
-                ],
+              Header(
+                title: 'DESTINATIONS',
               ),
               SizedBox(
                 height: 20.0,
@@ -133,4 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
+
 
