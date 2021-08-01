@@ -10,7 +10,7 @@ LowerCard({this.title,this.img});
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.only(right: 10.0,left: 10.0),
+          padding: EdgeInsets.only(right: 10.0),
           width: 150,
           height: 150,
           decoration: BoxDecoration(
@@ -26,7 +26,6 @@ LowerCard({this.title,this.img});
           padding: EdgeInsets.only(top: 5.0),
           width: 150,
           decoration: BoxDecoration(
-
             borderRadius: BorderRadius.circular(10.0)
           ),
 
