@@ -34,7 +34,6 @@ var obj = new Head();
       body: SafeArea(
           child: Column(
             children: <Widget>[
-
               Header(
                 title: 'DESTINATIONS',
               ),
@@ -99,6 +98,9 @@ var obj = new Head();
                                     imgpath: lowerShow[place][0],
                                     title: place,
                                     desc: lowerShow[place][1],
+                                    latitude: lowerShow[place][3],
+                                    longitude: lowerShow[place][4],
+                                    phonenumber: lowerShow[place][2],
                                   ),
                               ),),
                             },
