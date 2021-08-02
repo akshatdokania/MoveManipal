@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:move_manipal/Screens/Places.dart';
-import 'package:move_manipal/Screens/Food.dart';
-import 'package:move_manipal/Screens/Essentials.dart';
+import 'package:manipalmove/Screens/Places.dart';
+import 'package:manipalmove/Screens/Food.dart';
+import 'package:manipalmove/Screens/Essentials.dart';
 
 void main() {
   runApp(MyApp());
