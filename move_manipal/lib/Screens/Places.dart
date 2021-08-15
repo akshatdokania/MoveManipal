@@ -83,6 +83,7 @@ var obj = new Head();
               // ),
               SizedBox(
                 height: 350,
+                width: double.infinity,
                 child: GridView.builder(
 
                     itemCount: placeList.length,
@@ -95,7 +96,7 @@ var obj = new Head();
                     itemBuilder: (BuildContext context, int index){
                       var place = placeList[index];
                       return Padding(
-                        padding: EdgeInsets.only(left: 20,right: 10),
+                        padding: EdgeInsets.only(left: 20,right: 20),
                         child: GestureDetector(
                           onTap: ()=>{
                             showModalBottomSheet(

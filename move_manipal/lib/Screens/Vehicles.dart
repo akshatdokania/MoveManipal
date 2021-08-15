@@ -7,19 +7,19 @@ import 'package:manipalmove/Components/Header.dart';
 import 'package:manipalmove/Components/bottomAppBar.dart';
 import 'package:manipalmove/Screens/PopUpCard.dart';
 
-class Food extends StatefulWidget {
-  static const String id ='Food';
+class Vehicles extends StatefulWidget {
+  static const String id ='Vehicles';
   @override
-  _FoodState createState() => _FoodState();
+  _VehiclesState createState() => _VehiclesState();
 }
 
-class _FoodState extends State<Food> {
+class _VehiclesState extends State<Vehicles> {
   int sel=0;
   var obj = new Head();
 
   @override
   Widget build(BuildContext context) {
-    var broadItem = obj.food;
+    var broadItem = obj.vehicle;
     var upRowMap = broadItem[0];
     var downRow = Map<String,dynamic>.from(broadItem[1]);
     String selected;
@@ -34,9 +34,8 @@ class _FoodState extends State<Food> {
       body: SafeArea(
           child: Column(
             children: <Widget>[
-
               Header(
-                title: 'Food',
+                title: 'DESTINATIONS',
               ),
               SizedBox(
                 height: 300,
@@ -65,11 +64,11 @@ class _FoodState extends State<Food> {
               //   child: Row(
               //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
               //     children: <Widget>[
-              //       Text('TOP PLACES',
-              //         style: TextStyle(
-              //           color: Colors.white,
-              //           fontSize: 18.0,
-              //           fontWeight: FontWeight.w600,
+              //     Text('Hot Destinations',
+              //       style: TextStyle(
+              //       color: Colors.white,
+              //       fontSize: 18.0,
+              //       fontWeight: FontWeight.w600,
               //         ),
               //       ),
               //       Text('More',
@@ -84,8 +83,9 @@ class _FoodState extends State<Food> {
               // ),
               SizedBox(
                 height: 350,
+                width: double.infinity,
                 child: GridView.builder(
-                    shrinkWrap: true,
+
                     itemCount: placeList.length,
                     gridDelegate:
                     SliverGridDelegateWithFixedCrossAxisCount(
@@ -100,17 +100,18 @@ class _FoodState extends State<Food> {
                         child: GestureDetector(
                           onTap: ()=>{
                             showModalBottomSheet(
-                              // isScrollControlled: true,
+                              isScrollControlled: true,
+
                               context: context,
                               builder: (context)=>
-                                PopUpCard(
-                                  imgpath: lowerShow[place][0],
-                                  title: place,
-                                  desc: lowerShow[place][1],
-                                  latitude: lowerShow[place][3],
-                                  longitude: lowerShow[place][4],
-                                  phonenumber: lowerShow[place][2],
-                                ),
+                                  PopUpCard(
+                                    imgpath: lowerShow[place][0],
+                                    title: place,
+                                    desc: lowerShow[place][1],
+                                    latitude: lowerShow[place][3],
+                                    longitude: lowerShow[place][4],
+                                    phonenumber: lowerShow[place][2],
+                                  ),
                             ),
                           },
                           child: LowerCard(
@@ -131,3 +132,32 @@ class _FoodState extends State<Food> {
 
 
 
+
+// ListView.builder(
+// scrollDirection: Axis.horizontal,
+// shrinkWrap: true,
+// itemCount: placeList.length,
+// itemBuilder : (BuildContext context, int index){
+// var place = placeList[index];
+// return Padding(
+// padding: EdgeInsets.only(left: index==0?20:0,right: 10),
+// child: GestureDetector(
+// onTap: ()=>{
+// Navigator.push(context, MaterialPageRoute(builder: (context)=>
+// PopUpCard(
+// imgpath: lowerShow[place][0],
+// title: place,
+// desc: lowerShow[place][1],
+// latitude: lowerShow[place][3],
+// longitude: lowerShow[place][4],
+// phonenumber: lowerShow[place][2],
+// ),
+// ),),
+// },
+// child: LowerCard(
+// title: place,
+// img: lowerShow[place][0],
+// ),
+// ),
+// );
+// }),

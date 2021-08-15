@@ -146,7 +146,7 @@ class Head{
           "13.352246339453867", "74.78747113288276"
         ],
         'Egg Factory': [
-          "image/eggfactory.png",
+          "images/Egg-Factory.jpg",
           "Our initial assessment that this is a place for a group to party still holds good. It is nice and airy, and spacious so every group has their privacy. Then the food is quick to arrive and the taste and portions great. The service is friendly. What more can you ask?",
           "+918204294455",
           "13.351313962291536", "74.78799205438717"
@@ -176,25 +176,25 @@ class Head{
           "13.354417881465523", "74.78420289823025"
         ],
         'Cafe7Bees':[
-          "images/Cafe7Bees.jpg",
+          "images/cafe7.png",
           "Good food in reasonable price, Awesome customer service. One of the best Cáfes in Manipal. Even though space is not their area of expertise, food is. Would surely recommend for a quick bite.",
           "+918204299277",
           "13.353354466174475", "74.7906374117237"
         ],
         'Planet Cafe': [
-          "images/Planet-Cafe/jpg",
+          "images/planetcafe.jpeg",
           "This one is definitely for the lovers of the Indian Bread. They provide great main course options and deliver on it. The service might be a little on the slower side. Speciality dish - Meatball Roll",
           "+918202572454",
           "13.35947244532602", "74.78448222521719"
         ],
         'Laughing Buddha':[
-          "images/Laughing-Buddha.jpg",
+          "images/laughingbudha.jpg",
           "A place to fulfill all your cravings for the side dishes. They're just lip-smacking good. A great ambiance for friends and family. Keep in mind the HUGE proportions they have waiting for you",
           "+919820929223",
           "13.36127079024239", "74.78309999671669"
         ],
         'MIT Cafeteria':[
-          "images/Mit-Cafeteria.jpg",
+          "images/mitcafe.jpg",
           "This one is close to all MITians hearts and the place to be to grab a quick bite or lunch between classes. All their dishes are amazing! This place is a must visit for all in manipal for the first or the nth time!",
           "",
           "13.352224105976056", "74.7931154237046"
@@ -244,13 +244,13 @@ class Head{
           "13.349501218985498", "74.78285324055916"
         ],
         'Tiwari Chaat':[
-          "images/Tiwari-Chaat.jpg",
+          "images/tc.jpg",
           "Enjoy the street food with the tastiest Paani-Puri and Chaats around town!",
           "+918951933904",
           "13.345939372591149", "74.79012333871056"
         ],
         'MFC':[
-          "images/MFC.jpg",
+          "images/mfc.jpg",
           "THE BEST PLACE to eat fast food, no exceptions. A good place to settle those bets or just enjoy occasional taco. Could not recommend enough!",
           "+917338334970",
           "13.348371509791306", "74.79374963199379"
@@ -300,7 +300,7 @@ class Head{
           "13.348944231018285", "74.78753145405264"
         ],
         'Naturals':[
-          "images/Naturals.jpg",
+          "images/naturals.jpg",
           "Any compliment to their ice creams are an understatement!",
           "+918202575937",
           "13.348619060167806", "74.77680423686202"
