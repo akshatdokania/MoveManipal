@@ -2,19 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:manipalmove/Screens/Places.dart';
 import 'package:manipalmove/Screens/Food.dart';
 import 'package:manipalmove/Screens/Essentials.dart';
+import 'package:manipalmove/Components/theme.dart';
+MyTheme currentTheme = MyTheme();
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
 
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    currentTheme.addListener(() {
+      setState(() {
+      });
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      themeMode: currentTheme.currentTheme(),
       initialRoute: Places.id,
       routes: {
         Places.id: (context)   =>Places(),

@@ -60,41 +60,49 @@ class _FoodState extends State<Food> {
                       );
                     }),
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 15,bottom: 25,right: 15,),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text('TOP PLACES',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    Text('More',
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 18.0,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              // Padding(
+              //   padding: EdgeInsets.only(left: 15,bottom: 25,right: 15,),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     children: <Widget>[
+              //       Text('TOP PLACES',
+              //         style: TextStyle(
+              //           color: Colors.white,
+              //           fontSize: 18.0,
+              //           fontWeight: FontWeight.w600,
+              //         ),
+              //       ),
+              //       Text('More',
+              //         style: TextStyle(
+              //           color: Colors.white70,
+              //           fontSize: 18.0,
+              //           fontWeight: FontWeight.w600,
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               SizedBox(
-                height: 200,
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
+                height: 350,
+                child: GridView.builder(
                     shrinkWrap: true,
                     itemCount: placeList.length,
-                    itemBuilder : (BuildContext context, int index){
+                    gridDelegate:
+                    SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 5.0,
+                      mainAxisSpacing: 5.0,
+                    ),
+                    itemBuilder: (BuildContext context, int index){
                       var place = placeList[index];
                       return Padding(
-                        padding: EdgeInsets.only(left: index==0?20:0,right: 10),
+                        padding: EdgeInsets.only(left: 20,right: 10),
                         child: GestureDetector(
                           onTap: ()=>{
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>
+                            showModalBottomSheet(
+                              // isScrollControlled: true,
+                              context: context,
+                              builder: (context)=>
                                 PopUpCard(
                                   imgpath: lowerShow[place][0],
                                   title: place,
@@ -103,7 +111,7 @@ class _FoodState extends State<Food> {
                                   longitude: lowerShow[place][4],
                                   phonenumber: lowerShow[place][2],
                                 ),
-                            ),),
+                            ),
                           },
                           child: LowerCard(
                             title: place,
@@ -111,7 +119,8 @@ class _FoodState extends State<Food> {
                           ),
                         ),
                       );
-                    }),
+                    }
+                ),
               ),
             ],
           )),

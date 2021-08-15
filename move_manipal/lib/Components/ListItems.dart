@@ -7,7 +7,8 @@ LowerCard({this.title,this.img});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
+      shrinkWrap: true,
       children: [
         Container(
           padding: EdgeInsets.only(right: 10.0),
@@ -20,6 +21,7 @@ LowerCard({this.title,this.img});
               image: AssetImage("$img"),
               fit: BoxFit.cover,
             ),
+
           ),
         ),
         Container(
@@ -43,3 +45,4 @@ LowerCard({this.title,this.img});
     );
   }
 }
+

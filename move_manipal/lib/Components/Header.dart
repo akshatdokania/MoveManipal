@@ -1,4 +1,6 @@
  import 'package:flutter/material.dart';
+import 'package:manipalmove/Components/theme.dart';
+import 'package:manipalmove/main.dart';
 class Header extends StatelessWidget {
   final String title;
   Header({this.title});
@@ -17,17 +19,32 @@ class Header extends StatelessWidget {
                 fontWeight: FontWeight.w600,
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(right: 10.0),
-            decoration: BoxDecoration(
-              color: Colors.white12,
-              borderRadius: BorderRadius.circular(40.0),
+          GestureDetector(
+            onTap: (){
+              currentTheme.switchTheme();
+            },
+            child: Container(
+              height: 50,
+              width: 50,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("images/logo-black.png"),
+                  fit: BoxFit.cover,
+                )
+              ),
             ),
-            child: IconButton(onPressed: (){},
-              icon: Icon(Icons.search_sharp),
-
-            ),
-          ),
+          )
+          // Container(
+          //   margin: EdgeInsets.only(right: 10.0),
+          //   decoration: BoxDecoration(
+          //     color: Colors.white12,
+          //     borderRadius: BorderRadius.circular(40.0),
+          //   ),
+          //   child: IconButton(onPressed: (){},
+          //     icon: Icon(Icons.search_sharp),
+          //
+          //   ),
+          // ),
         ],
       ),
     );

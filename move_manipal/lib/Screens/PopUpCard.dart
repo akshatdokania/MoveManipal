@@ -12,15 +12,18 @@ PopUpCard({this.imgpath,this.title,this.desc,this.latitude,this.phonenumber,this
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
+    return Container(
+      height: MediaQuery.of(context).size.height*0.75,
+      child: ListView(
         children: [
           Stack(
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 300,
+
                 decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(10.0),topLeft: Radius.circular(10.0)),
                     image: DecorationImage(
                       image: AssetImage(imgpath),
                       fit: BoxFit.cover,
@@ -48,7 +51,7 @@ PopUpCard({this.imgpath,this.title,this.desc,this.latitude,this.phonenumber,this
                   height: 500,
                   padding: EdgeInsets.only(top: 20,left: 25,right: 20),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(40.0),
+                    // borderRadius: BorderRadius.circular(40.0),
                     color: Colors.black,
                   ),
                   child: ListView(
@@ -125,3 +128,4 @@ Buttonfunc({this.iconb,this.fn});
     );
   }
 }
+

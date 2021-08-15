@@ -146,7 +146,7 @@ class Head{
           "13.352246339453867", "74.78747113288276"
         ],
         'Egg Factory': [
-          "image/Egg-Factory.jpg",
+          "image/eggfactory.png",
           "Our initial assessment that this is a place for a group to party still holds good. It is nice and airy, and spacious so every group has their privacy. Then the food is quick to arrive and the taste and portions great. The service is friendly. What more can you ask?",
           "+918204294455",
           "13.351313962291536", "74.78799205438717"
