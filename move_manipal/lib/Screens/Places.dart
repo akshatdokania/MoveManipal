@@ -6,6 +6,8 @@ import 'package:manipalmove/Components/ListItems.dart';
 import 'package:manipalmove/Components/Header.dart';
 import 'package:manipalmove/Components/bottomAppBar.dart';
 import 'package:manipalmove/Screens/PopUpCard.dart';
+import 'package:manipalmove/Components/NewListView.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class Places extends StatefulWidget {
   static const String id ='Places';
@@ -30,15 +32,15 @@ var obj = new Head();
     var lowerShow = downRow['$selected'];
     var placeList = lowerShow.keys.toList();
     return Scaffold(
-      bottomNavigationBar: bottomBar(),
+
       body: SafeArea(
           child: Column(
             children: <Widget>[
               Header(
                 title: 'DESTINATIONS',
               ),
-              SizedBox(
-                height: 300,
+              Container(
+                height: MediaQuery.of(context).size.height*.36,
 
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
@@ -59,44 +61,18 @@ var obj = new Head();
                       );
                     }),
               ),
-              // Padding(
-              //   padding: EdgeInsets.only(left: 15,bottom: 25,right: 15,),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //     children: <Widget>[
-              //     Text('Hot Destinations',
-              //       style: TextStyle(
-              //       color: Colors.white,
-              //       fontSize: 18.0,
-              //       fontWeight: FontWeight.w600,
-              //         ),
-              //       ),
-              //       Text('More',
-              //         style: TextStyle(
-              //           color: Colors.white70,
-              //           fontSize: 18.0,
-              //           fontWeight: FontWeight.w600,
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              SizedBox(
-                height: 350,
+
+              Container(
+                height: MediaQuery.of(context).size.height/2.15,
                 width: double.infinity,
-                child: GridView.builder(
+                child: ListView.builder(
 
                     itemCount: placeList.length,
-                    gridDelegate:
-                    SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      crossAxisSpacing: 5.0,
-                      mainAxisSpacing: 5.0,
-                    ),
+
                     itemBuilder: (BuildContext context, int index){
                       var place = placeList[index];
                       return Padding(
-                        padding: EdgeInsets.only(left: 20,right: 20),
+                        padding: EdgeInsets.only(left: 0,right: 0),
                         child: GestureDetector(
                           onTap: ()=>{
                             showModalBottomSheet(
@@ -114,9 +90,11 @@ var obj = new Head();
                                 ),
                             ),
                           },
-                          child: LowerCard(
+                          child: NewListView(
                             title: place,
                             img: lowerShow[place][0],
+                            desc: lowerShow[place][1],
+                            color: Colors.teal,
                           ),
                         ),
                       );
@@ -133,31 +111,3 @@ var obj = new Head();
 
 
 
-// ListView.builder(
-// scrollDirection: Axis.horizontal,
-// shrinkWrap: true,
-// itemCount: placeList.length,
-// itemBuilder : (BuildContext context, int index){
-// var place = placeList[index];
-// return Padding(
-// padding: EdgeInsets.only(left: index==0?20:0,right: 10),
-// child: GestureDetector(
-// onTap: ()=>{
-// Navigator.push(context, MaterialPageRoute(builder: (context)=>
-// PopUpCard(
-// imgpath: lowerShow[place][0],
-// title: place,
-// desc: lowerShow[place][1],
-// latitude: lowerShow[place][3],
-// longitude: lowerShow[place][4],
-// phonenumber: lowerShow[place][2],
-// ),
-// ),),
-// },
-// child: LowerCard(
-// title: place,
-// img: lowerShow[place][0],
-// ),
-// ),
-// );
-// }),

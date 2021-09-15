@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:manipalmove/Screens/Places.dart';
 import 'package:manipalmove/Screens/Food.dart';
 import 'package:manipalmove/Screens/Essentials.dart';
+import 'package:manipalmove/Screens/Vehicles.dart';
 class bottomBar extends StatelessWidget {
 
   @override
@@ -28,7 +29,7 @@ class bottomBar extends StatelessWidget {
             ),
           ),
           IconButton(onPressed: (){
-
+                Navigator.pushNamed(context, Vehicles.id);
           },
             icon: Icon(
               Icons.car_rental,

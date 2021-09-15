@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 class Head{
   var places = [
     {
-      'Inside Manipal' : "images/Inside.jpeg",
-      'Vicinity' : "images/Vicinity.jpeg"
+      'Inside Manipal' : "images/inside.png",
+      'Vicinity' : "images/vicinity.png"
     },
     {
       'Inside Manipal' : {
@@ -127,9 +127,9 @@ class Head{
     }];
   var food = [
     {
-      'Family Restraunts': "images/FamilyRestraunts.jpeg",
-      'Indulgence' : "images/Indulgence.jpeg",
-      'Desserts' : "images/Desserts.jpeg",
+      'Family Restraunts': "images/fam.png",
+      'Indulgence' : "images/indulgence.png",
+      'Desserts' : "images/deserts.png",
     },
     {
       'Family Restraunts':{
@@ -309,9 +309,9 @@ class Head{
     }];
   var essentials = [
     {
-      'Grocery Stores': "images/Grocery.jpeg",
-      'Clothing Stores': "images/Clothing.jpeg",
-      'Medical Stores': "images/Medical.jpeg",
+      'Grocery Stores': "images/grocery.png",
+      'Clothing Stores': "images/clothing.png",
+      'Medical Stores': "images/medical.png",
     },
     {
       'Grocery Stores':{
@@ -389,9 +389,9 @@ class Head{
     }];
   var vehicle = [
     {
-      'Rentals': 'images/Rentals.jpeg',
-      'Transport': 'images/Transport.jpeg',
-      'Auto' : 'images/Auto.jpeg',
+      'Rentals': 'images/car.png',
+      'Transport': 'images/bus.png',
+      'Auto' : 'images/auto.png',
     },
     {
       'Rentals': {
@@ -402,7 +402,7 @@ class Head{
           "13.35937686096035", "74.78492832521725"
         ],
         'BhoomRiderz':[
-          "images/Bhoom.jpg",
+          "images/bhoom.jpg",
           "Rent a bike and feel the breeze in your hair!",
           "+918150025955",
           "13.339602383065307", "74.78683515070954"
@@ -442,40 +442,40 @@ class Head{
       },
       'Auto':{
         'Eshwar Nagar':[
-          "images/EshwarNagar.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202574200",
-          "13.355228466802856, 74.79549721893376"
+          "13.355228466802856", "74.79549721893376"
         ],
         'Mandavi':[
-          "images/Mandavi.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202575070",
-          "13.358125716343492, 74.7848109119563"
+          "13.358125716343492", "74.7848109119563"
         ],
         'Dashratha': [
-          "images/Dashratha.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202574202",
-          "13.340099907083324, 74.79079771043727"
+          "13.340099907083324", "74.79079771043727"
         ],
         'Green Park': [
-          "images/GreenPark.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202572006",
-          "13.351880605243222, 74.78744260660996"
+          "13.351880605243222", "74.78744260660996"
         ],
         'Manish Apartments': [
-          "images/Manish.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202574369",
-          "13.35317621123903, 74.78411167523382"
+          "13.35317621123903", "74.78411167523382"
         ],
         'Syndicate Circle':[
-          "images/SyndicateCircle.jpg",
-          "",
+          "images/AutoZoom.jpg",
+          "Zip past traffic in these BAD BOYZ!!",
           "+918202571454",
-          "13.346168206690914, 74.78308662756491"
+          "13.346168206690914", "74.78308662756491"
         ],
 
       },

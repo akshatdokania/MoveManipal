@@ -11,7 +11,7 @@ mainCard({this.bgimage,this.selected,this.onpressed});
       child: Container(
         margin: EdgeInsets.only(right: 20),
         // padding: EdgeInsets.all(20.0),
-        height: 200,
+        height: MediaQuery.of(context).size.height*0.25,
         width: MediaQuery.of(context).size.width - 60,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
