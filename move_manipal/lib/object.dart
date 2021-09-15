@@ -164,7 +164,7 @@ class Head{
           "13.352424661098496", "74.78754115405269"
         ],
         'Pai Tiffins': [
-          "images/Pai-Tiffins.jpg",
+          "images/PaiTiffins.jpg",
           "The Food in this Restaurant really gives you the WOW feeling that you crave. Taste of the Sambar is really excellent. Hygienic food. Ambiance is like a Temple. Very humble staff to top it all!",
           "+919611013777",
           "13.352959866516024", "74.78958171172371"
@@ -225,7 +225,7 @@ class Head{
           "+917829386555",
           "13.358649438698194", "74.78429232521721"
         ],
-        'Hastag':[
+        'Hashtag':[
           "images/Hashtag.jpg",
           "A good place for lounging but a better one for a great Sunday Brunch! Great ambiance on offer along with a range of mocktails and cocktails.",
           "",
