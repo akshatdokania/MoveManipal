@@ -1,6 +1,8 @@
 # MoveManipal
 	MoveManipal
 
+ ##App to help student explore Manipal (Manipal Institute of Technology)
+
 Places to visit-                                     #small description #best time to visit #attractions #lodging 
 	Inside Manipal(eg. End point, beaches)
 	Around Manipal(eg. Agumbe, Jog Falls)
